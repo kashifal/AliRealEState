@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Ali Real Estate</title>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <div class="header">
+        <div class="header96">
+          <div class="pre-nav">
+            <div class="navbar">
+                <div class="logo"><a href="#">Ali Real Estate</a></div>
+                <div class="links">
+                    <a id="link1" class="link" href="#">Home</a>
+                    <a class="link" href="#">About</a>
+                    <a class="link" href="#">Contact</a>
+                    <a class="link" href="#">Store</a>
+                    <a class="link" href="#">Blog</a>
+                    <a class="link" href="#">Call</a>
+                </div>
+            </div>
+          </div>
+            <div class="banner">
+                <div class="_banner">
+                    <p>Learn more about us</p><br>
+                    <h2>Welcome to Ali Real Estate Website</h2><br>
+                    <hr>
+                    <p>The Best Propert selling site on internet</p><br><br>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="welcome">
+        <div class="welcome-con">
+            <div class="welcome-txt">
+                <h2>Welcome to our website</h2>
+                <p>We are pleases that you are interested in our product.
+                    We are also interested in you. Coasue we want you to
+                    buy something new and perfect. Let's be honest with you.
+
+                </p>
+                <p>Just Remember us!</p><br>
+                <hr>
+            </div>
+            <div class="welcome-img">
+            </div>
+        </div>
+    </div>
+    <!-- Team -->
+    <div class="team">
+        <div class="_team">
+            <div class="_team-1">
+                <p>Most Motivated Team</p>
+                <p>Our Team is the best team on the surface I would say
+                    We have very motivated hard plus smart working
+                    people's.
+                </p>
+                <p>Team will works 24/7 without any break.</p>
+            </div>
+            <div class="_team-2">
+                <div class="team-left">
+                    <div class="team-left-center">
+                        <div class="team-left-center-txt">
+                            <p>Mohammed K.</p>
+                           
+                        </div>
+                        <div class="team-left-center-img-1"></div>
+                    </div>
+                </div>
+                <div class="team-left">
+                    <div class="team-left-center">
+                        <div class="team-left-center-txt">
+                            <p>Shaheer M.</p>
+                        </div>
+                        <div class="team-left-center-img-2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="_team-2">
+                <div class="team-left">
+                    <div class="team-left-center">
+                        <div class="team-left-center-txt">
+                            <p>Hamza W.</p>
+                        </div>
+                        <div class="team-left-center-img-3"></div>
+                    </div>
+                </div>
+                <div class="team-left">
+                    <div class="team-left-center">
+                        <div class="team-left-center-txt">
+                            <p>Jolie H.</p>
+                        </div>
+                        <div class="team-left-center-img-4"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="_team-2">
+                <div class="team-left">
+                    <div class="team-left-center">
+                        <div class="team-left-center-txt">
+                            <p>Madiha W.</p>
+                        </div>
+                        <div class="team-left-center-img-5"></div>
+                    </div>
+                </div>
+                <div class="team-left">
+                    <div class="team-left-center">
+                        <div class="team-left-center-txt">
+                            <p>Qamar M.</p>
+                        </div>
+                        <div class="team-left-center-img-6"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="timer">
+        <div class="countdown">
+            <div class="count1">
+                <p>We are Launching</p>
+                <p>We are gonna launch new society at 5 PM Today!</p>
+            </div>
+            <div class="count2">
+                <h1 id="span"></h1>
+            </div>
+        </div>
+    </div>
+    <div class="subscribe">
+        <div class="_subscribe">
+      <div class="_sub-1">
+          <p class="subscribeNOW">subscribe</p>
+          <p class="letter">Sign up to our newsletter and stay update</p><br>
+          <input type="email" placeholder="Enter Your e-mail adress" name="usermail" id="mail"><br><br>
+          <a class="subBTN" href="#">Subscribe</a><br><br>
+          <p class="agree">By submiting this form your information granting us permission to email
+              you.You may unsubscribe at any time.
+          </p>
+      </div>
+      <div class="_sub-2"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="foot1"></div>
+        <div class="foot2">
+            <p>All rights reserved by :Kashif @2022-@2023</p>
+        </div>
+    </div>
+    
+    <script>
+        $(function () {
+            var header = $("body");
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+  
+                if (scroll > 50) {
+                    $('.pre-nav').addClass('new'); 
+                    $('.link').addClass('black');
+                } else if(scroll < 50)
+                {
+                    $('.pre-nav').removeClass('new');
+                    $('.link').removeClass('black');
+                }
+            });
+        });
+
+
+
+        
+        var span = document.getElementById('span');
+
+function time() {
+  var d = new Date();
+  var s = d.getSeconds();
+  var m = d.getMinutes();
+  var h = d.getHours();
+  span.textContent = 
+    (h)+ ":" + ("0" + m).substr(-2) + ":" + (s);
+}
+
+setInterval(time, 1000);
+
+
+
+    </script>
+</body>
+</html>

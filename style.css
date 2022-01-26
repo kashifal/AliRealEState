@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=Average+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+
+
+html 
+{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+*
+{
+  padding:0%;
+  margin: 0%;
+  font-family: 'Average Sans', sans-serif;
+  box-sizing: border-box;
+  
+}
+.header
+{
+  height: 110vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  background-image: url('real-estate.jpg');
+  background-size: cover;
+  background-color: #ffff; 
+  justify-content: center;
+  position: relative;
+}
+.header:after
+{
+  height: 100%;
+  width: 100%;
+  content: '';
+  position: absolute;
+  background-color: rgba(66, 61, 61, 0.582);
+  top: 0%;
+  left: 0%;
+}
+.header96
+{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 0%;
+  padding: 0%;
+  z-index: 2;
+}
+
+.pre-nav
+{
+  height: 14%;
+  background-color: transparent;
+  width: 100%;
+  margin-left: -1%;
+  display: flex;
+  transition: 0.4s ease;
+  align-items: center;
+  position: fixed;
+  justify-content: center;
+}
+.navbar
+{
+  width: 96%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a
+{
+  text-decoration: none;
+
+  font-size: 22.02px;
+  color: white;
+  
+}
+.pre-nav .navbar .links a
+{
+  padding: 10px 20px;
+  line-height: 22px;
+  transition: 0.3s ease;
+  text-decoration: none;
+  font-family: 'Average Sans', sans-serif;
+  color: white;
+}
+
+.navbar .links a:nth-child(6){
+  color: #fff;
+  background: #282345;
+  border-radius: 6px;
+} 
+.new
+{
+  background:white;
+  height: 10vh;
+  transition: 0.4s ease;
+  color: black;
+
+}
+.new .navbar .logo a,.new .navbar .links a
+{
+  color: black;
+  transition: 0.3s ease;
+}
+.new .navbar .links a:nth-child(6)
+{
+color: white;
+}
+.banner
+{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+._banner
+{
+  height:37% ;
+  margin-top: 20vh;
+  width: 65%;
+  color: white;
+  display: block;
+
+}
+._banner p
+{
+  font-family: 'Average Sans', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 20px;
+}
+._banner h2
+{
+  font-size: 32px;
+  font-family: 'Goudy Bookletter 1911', serif;
+}
+._banner a
+{
+  padding: 16px 16px;
+  width: 126px;
+  height: 56px;
+  background-color: #282345;
+  font-size: 18px;
+  border-radius: 6px;
+  line-height: 27px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+._banner a:hover
+{
+  background-color: #16132b;
+}
+hr
+{
+  width: 150px;
+}
+.welcome
+{
+  height: 50vh;
+  width: 100vw;
+  background: #282345;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.welcome-con
+{
+  height: 70%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+.welcome-txt
+{
+  width: 50%;
+  height: 70%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.welcome-txt h2
+{
+  color: white;
+  font-family: 'Goudy Bookletter 1911', serif;
+  font-size: 32px;
+}
+.welcome-txt p
+{
+  color: white;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: justify;
+  font-family: 'Average sans';
+  margin-right: 15px;
+  font-weight:lighter;
+}
+.welcome-img
+{
+  width: 50%;
+  height: 100%;
+  background-image: url('real-estate-1.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.team
+{
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffff;
+}
+._team
+{
+  height: 80%;
+  width: 70%; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+
+}
+._team-1
+{
+  height: 25%;
+  width: 100%;
+}
+._team-1 p:nth-child(1)
+{
+  font-family: 'Goudy Bookletter 1911', serif;
+  font-size: 32px;
+  color: #231f3d;
+  
+}
+._team-1 p:nth-child(2)
+{
+ color: #212121;
+ font-size: 16px;
+ line-height: 24px; 
+}
+
+._team-2
+{
+  height: 25%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.team-left
+{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:48%; 
+}
+.team-left-center
+{
+  height: 80%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  flex-direction: row;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.team-left-center-txt
+{
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; 
+  font-family: 'Goudy Bookletter 1911', serif;
+  align-items: flex-start;
+  padding-left: 15px;
+  padding-right: 15px;
+  justify-content: center;
+}
+.team-left-center-txt p
+{
+  font-family: 'Goudy Bookletter 1911', serif;
+  font-size: 25px;
+
+}
+.team-left-center-txt span
+{
+  width: 100%;
+  height: 30px;
+  margin-bottom: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.team-left-center-img-1
+{
+  height: 100%;
+  width: 40%;
+  background-image: url('kashif.jpg');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  
+}
+.team-left-center-img-1::after
+{
+position: absolute;
+height: 100%;
+width: 100%;
+content: '';
+top: 0%;
+left: 0%;
+background: #231f3d;
+opacity: 0.5;
+}
+.team-left-center-img-2::after
+{
+position: absolute;
+height: 100%;
+width: 100%;
+content: '';
+top: 0%;
+left: 0%;
+background: #231f3d;
+opacity: 0.5;
+}
+
+.team-left-center-img-2
+{
+  height: 100%;
+  position: relative;
+  width: 40%;
+  background-image: url('man2.jpg');
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.team-left-center-img-3
+{
+  height: 100%;
+  width: 40%;
+  background-image: url('man3.jpg');
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.team-left-center-img-4
+{
+  height: 100%;
+  width: 40%;
+  background-image: url('girl.jpg');
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.team-left-center-img-5
+{
+  height: 100%;
+  width: 40%;
+  background-image: url('girl1.jpg');
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.team-left-center-img-6
+{
+  height: 100%;
+  width: 40%;
+  background-image: url('man4.jpg');
+  background-position: center;
+  background-size: cover;
+  
+}
+.team-right
+{
+  height: 100%;
+  width:48%;
+  background: chartreuse;
+}
+.timer 
+{
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.countdown
+{
+  height: 68%;
+  width: 70%;
+  padding: 20px 20px; 
+  display: flex;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  align-items: center;
+  border-top: 10px solid #231f3d;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.count1
+{
+  height: 40%;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.count2
+{
+  height: 60%;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.count2 #span
+{
+  font-size: 150px;
+  line-height: 64px;
+  letter-spacing: 20px;
+  word-spacing: 50px;
+  color: #231f3d;
+}
+.count1 p:nth-child(1)
+{
+  font-size: 32px;
+
+  font-family: 'Goudy Bookletter 1911', serif;
+  line-height: 32px;
+  color: #231f3d;
+}
+.count1 p:nth-child(2)
+{
+  color: #212121;
+}
+.subscribe
+{
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+._subscribe
+{
+  height: 80%;
+  width: 70%;
+  padding: 20px 20px; 
+  display: flex;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  align-items: center; 
+  justify-content: space-between; 
+}
+._sub-1
+{
+  width: 60%;
+  height: 100%;
+  padding: 20px 20px;
+  
+}
+.subscribeNOW
+{
+  color: #231f3d;
+  font-size: 32px;
+  font-family: 'Goudy Bookletter 1911', serif;
+
+}
+.letter 
+{
+  font-size: 16px;
+  color: #212121;
+  line-height: 24px;
+}
+#mail
+{
+  padding: 12px 12px;
+  height: 12%;
+  border-radius: 2px;
+  border: 1px solid #212121;
+  outline: none;
+  font-size: 16px;
+  line-height: 24px;
+  box-shadow: none;
+  width: 84%;
+}
+._sub-2
+{
+  width: 40%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url('real-estate.jpg');
+}
+
+.agree 
+{
+  font-size: 16px;
+  color: #212121;
+  line-height: 24px;
+}
+.subBTN
+{
+  height:47px;
+  padding: 8px 12px;
+  background-color: #231f3d;
+  text-decoration: none;
+  color: white;
+  border-radius: 4px;
+  width: 102px;
+} 
+.footer
+{
+  height: 46vh;
+  width: 100vw;
+  background-color: #053d75;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.foot1
+{
+  height: 84%;
+  width: 100%;
+  background: #053d75;
+}
+
+.foot2
+{
+  height: 16%;
+  width: 100%;
+  background: #042e58;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.foot2 p
+{
+  color: white;
+  font-size: 12px;
+  line-height: 20px;
+}
